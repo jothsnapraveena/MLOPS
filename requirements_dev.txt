@@ -5,7 +5,7 @@ scikit-learn
 flask
 mlflow
 dvc
-
+category-encoders
 pytest
 tox
 black
