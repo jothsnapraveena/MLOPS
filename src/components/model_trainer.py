@@ -68,9 +68,13 @@ class ModelTrainer:
                  obj=best_model
             )
 
+            print(f"✅ Model saved at: {self.model_trainer_config.trained_model_file_path}")
+
+            logging.info("Model training completed successfully.") 
+
 
         
         except Exception as e:
-            logging.info()
+            logging.info("Model training failed")
             raise customexception(e,sys)
 

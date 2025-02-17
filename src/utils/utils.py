@@ -27,7 +27,7 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
 
             test_model_score=r2_score(y_test,y_test_pred)
 
-            report[list(model.keys())[i]]=test_model_score
+            report[list(models.keys())[i]]=test_model_score
         
         return report
     except Exception as e:
