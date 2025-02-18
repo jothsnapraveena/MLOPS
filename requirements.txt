@@ -6,5 +6,6 @@ flask
 mlflow
 dvc
 category-encoders
+xgboost
 
 -e .

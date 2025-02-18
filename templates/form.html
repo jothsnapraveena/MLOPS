@@ -1,0 +1,65 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    
+    <!-- Store Selection -->
+    <div class="form-group">
+        <label for="Store">Store:</label>
+        <select id="Store" name="Store">
+            <option value="0">Store 0</option>
+            <option value="1">Store 1</option>
+            <option value="2">Store 2</option>
+            <option value="3">Store 3</option>
+            <option value="4">Store 4</option>
+            <option value="5">Store 5</option>
+        </select>
+    </div>
+    
+    <!-- Holiday Flag -->
+    <div class="form-group">
+        <label for="Holiday_Flag">Holiday_Flag (0 or 1):</label>
+        <input type="text" id="Holiday_Flag" name="Holiday_Flag" placeholder="Enter 0 for No, 1 for Yes">
+    </div>
+    
+    <!-- Numeric Inputs -->
+    <div class="form-group">
+        <label for="Temperature">Temperature:</label>
+        <input type="text" id="Temperature" name="Temperature" placeholder="Enter temperature (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Fuel_Price">Fuel_Price:</label>
+        <input type="text" id="Fuel_Price" name="Fuel_Price" placeholder="Enter fuel price (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="CPI">CPI:</label>
+        <input type="text" id="CPI" name="CPI" placeholder="Enter CPI value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Unemployment">Unemployment Rate:</label>
+        <input type="text" id="Unemployment" name="Unemployment" placeholder="Enter unemployment rate (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="month">month:</label>
+        <input type="text" id="month" name="month" placeholder="Enter month (1-12)">
+    </div>
+    
+    <!-- Season Selection -->
+    <div class="form-group">
+        <label for="season">season:</label>
+        <select id="season" name="season">
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+        </select>
+    </div>
+    
+    <div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

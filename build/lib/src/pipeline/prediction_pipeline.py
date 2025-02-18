@@ -16,53 +16,44 @@ class PredictPipeline:
             preprocessor_path=os.path.join("artifacts","preprocessor.pkl")
             model_path=os.path.join("artifacts","model.pkl")
 
-            print("*** Loading Preprocessor and Model ***")
-
             preprocessor = load_object(preprocessor_path)
             model = load_object(model_path)
 
-            print("*** Checking Input DataFrame Before preprocessing ***")
-            print(features.head())
-
             scaled_features=preprocessor.transform(features)
-            print("*** Features Transformed Successfully ***")
             pred=model.predict(scaled_features)
-            print(f" Prediction Output :{pred}")
-            return pred
 
         except Exception as e:
             raise customexception(e,sys)
         
 class CustomData:
     def __init__(self,
-                 Store: str,  # ✅ Change to lowercase
-                 Holiday_Flag: int,
-                 Temperature: float,
-                 Fuel_Price: float,
-                 CPI: float,
-                 Unemployment: float,
+                 store: str,
+                 holiday_flag: int,
+                 temperature: float,
+                 fuel_price: float,
+                 cpi: float,
+                 unemployment: float,
                  month: int,
                  season: str):
 
-        # ✅ Keep all instance variables lowercase
-        self.Store = Store
-        self.Holiday_Flag = Holiday_Flag
-        self.Temperature = Temperature
-        self.Fuel_Price = Fuel_Price
-        self.CPI = CPI
-        self.Unemployment = Unemployment
+        self.store = store
+        self.holiday_flag = holiday_flag
+        self.temperature = temperature
+        self.fuel_price = fuel_price
+        self.cpi = cpi
+        self.unemployment = unemployment
         self.month = month
         self.season = season
 
     def get_data_as_dataframe(self):
         try:
             custom_data_input_dict = {
-                'Store': [self.Store],
-                'Holiday_Flag': [self.Holiday_Flag],
-                'Temperature': [self.Temperature],
-                'Fuel_Price': [self.Fuel_Price],
-                'CPI': [self.CPI],
-                'Unemployment': [self.Unemployment],
+                'store': [self.store],
+                'holiday_flag': [self.holiday_flag],
+                'temperature': [self.temperature],
+                'fuel_price': [self.fuel_price],
+                'cpi': [self.cpi],
+                'unemployment': [self.unemployment],
                 'month': [self.month],
                 'season': [self.season]
             }
