@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/78036834ed94499db0c16c2ad9d7abd6/artifacts
+end_time: 1740018809511
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 78036834ed94499db0c16c2ad9d7abd6
+run_name: salty-auk-239
+run_uuid: 78036834ed94499db0c16c2ad9d7abd6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740018799487
+status: 4
+tags: []
+user_id: joths

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/dbd0872ee3f24898b36b0df1948787ed/artifacts
+end_time: 1740018664861
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dbd0872ee3f24898b36b0df1948787ed
+run_name: lyrical-calf-153
+run_uuid: dbd0872ee3f24898b36b0df1948787ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740018654691
+status: 4
+tags: []
+user_id: joths

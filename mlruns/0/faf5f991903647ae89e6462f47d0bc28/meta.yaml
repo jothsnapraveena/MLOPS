@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/faf5f991903647ae89e6462f47d0bc28/artifacts
+end_time: 1740018169148
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: faf5f991903647ae89e6462f47d0bc28
+run_name: illustrious-wren-666
+run_uuid: faf5f991903647ae89e6462f47d0bc28
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740018158591
+status: 4
+tags: []
+user_id: joths

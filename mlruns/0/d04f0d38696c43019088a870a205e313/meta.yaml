@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d04f0d38696c43019088a870a205e313/artifacts
+end_time: 1740017046385
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d04f0d38696c43019088a870a205e313
+run_name: peaceful-shark-379
+run_uuid: d04f0d38696c43019088a870a205e313
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740017030787
+status: 4
+tags: []
+user_id: joths

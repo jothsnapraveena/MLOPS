@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/95aacdb7021c4a459e835dd64fb2e571/artifacts
+end_time: 1740052872389
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 95aacdb7021c4a459e835dd64fb2e571
+run_name: melodic-fox-426
+run_uuid: 95aacdb7021c4a459e835dd64fb2e571
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740052857447
+status: 4
+tags: []
+user_id: joths

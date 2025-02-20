@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/fb1185165de14d028cf411344f9c117d/artifacts
+end_time: 1740017736037
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fb1185165de14d028cf411344f9c117d
+run_name: charming-duck-69
+run_uuid: fb1185165de14d028cf411344f9c117d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740017724414
+status: 4
+tags: []
+user_id: joths
