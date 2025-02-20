@@ -7,7 +7,7 @@ import pandas as pd
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.components.model_trainer import ModelTrainer
-#from src.components.model_evaluation import ModelEvaluation
+from src.components.model_evaluation import ModelEvaluation
 
 try:
     print("✅ Starting Training Pipeline...")
@@ -28,10 +28,10 @@ try:
     model_trainer_obj.initiate_model_training(train_arr, test_arr)
     print("✅ Model Training Complete!")
 
-    # # ✅ Step 4: Model Evaluation
-    # model_eval_obj = ModelEvaluation()
-    # model_eval_obj.initiate_model_evaluation(train_arr, test_arr)
-    # print("✅ Model Evaluation Complete!")
+    # ✅ Step 4: Model Evaluation
+    model_eval_obj = ModelEvaluation()
+    model_eval_obj.initiate_model_evaluation(train_arr, test_arr)
+    print("✅ Model Evaluation Complete!")
 
 except Exception as e:
     print(f"❌ ERROR: {str(e)}")

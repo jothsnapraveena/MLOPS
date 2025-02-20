@@ -14,15 +14,15 @@ import pickle
 from src.utils.utils import load_object
 
 
-
+#mlflow.set_registry_uri("http://localhost:5000")
 class ModelEvaluation:
     def __init__(self):
         logging.info("ModelEvaluation Started")
     
     def eval_metrics(self,actual,pred):
-        rmse = np.sqrt(mean_squared_error(actual, pred))# here is RMSE
-        mae = mean_absolute_error(actual, pred)# here is MAE
-        r2 = r2_score(actual, pred)# here is r3 value
+        rmse = np.sqrt(mean_squared_error(actual, pred))
+        mae = mean_absolute_error(actual, pred)
+        r2 = r2_score(actual, pred)
         logging.info("evaluation metrics captured")
         return rmse, mae, r2
     
@@ -33,13 +33,15 @@ class ModelEvaluation:
             model_path=os.path.join("artifacts","model.pkl")
             model=load_object(model_path)
 
-            #mlflow.set_registry_uri("")
-             
+            #tracking_uri=mlflow.get_tracking_uri()
+            #print(f"MLflow Tracking URI: {tracking_uri}")
+            
             logging.info("model has register")
 
             tracking_url_type_store=urlparse(mlflow.get_tracking_uri()).scheme
 
             print(tracking_url_type_store)
+            
 
 
 
@@ -68,5 +70,5 @@ class ModelEvaluation:
         except Exception as e:
             raise customexception(e,sys)
 
-        
+    
       
